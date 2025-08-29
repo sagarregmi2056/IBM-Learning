@@ -1,5 +1,6 @@
 
 # Mainframe Virtualization & Memory Notes
+# 📘 IBM Z Developer Roadmap – Day 1 Learning Log
 
 ## 1. Virtualization on the Mainframe
 - A **mainframe** is physically huge: processors, memory, I/O adapters, cooling, power, networking.
