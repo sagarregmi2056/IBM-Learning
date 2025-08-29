@@ -16,7 +16,7 @@ Welcome to my IBM Z Learning Journey repository! Here I track my progress throug
    - Core developer training
    - Build & maintain COBOL applications
    - System design, DevOps & cloud basics
-   - Internship-ready skills for IBM Germany
+  
 
 3. **App Modernization**
    - Wrap COBOL into APIs
