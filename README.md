@@ -41,6 +41,17 @@ Welcome to my IBM Z Learning Journey repository! Here I track my progress throug
 ### Intermediate Kubernetes Operators
 [![Intermediate Kubernetes Operators](https://images.credly.com/size/340x340/images/7004f7b3-cd81-48cc-b2e1-257554d2cafc/Kubernetes-Operators.png)](https://www.credly.com/badges/7004f7b3-cd81-48cc-b2e1-257554d2cafc/public_url)
 
+
+
+### IBM z-os Developer
+
+- **Badge:** [IBM z/OS Mainframe Practitioner](https://www.credly.com/earner/earned/share/273fbf86-467e-4b4c-99df-e1041c3bc5bd)
+- **Score:** 28/30  
+- **Passing Score:** 24/30  
+- Badge verification is available via [Credly](https://www.credly.com/earner/earned/share/273fbf86-467e-4b4c-99df-e1041c3bc5bd)
+
+
+
 ---
 
 ## 📌 Notes & Resources
