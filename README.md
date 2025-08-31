@@ -68,3 +68,9 @@ Welcome to my IBM Z Learning Journey repository! Here I track my progress throug
 [LinkedIn](https://www.linkedin.com/in/sagar-regmi-60b377216/) 
 
 ---
+
+
+ssh Z79919@204.90.115.200
+
+
+/z/z79919
