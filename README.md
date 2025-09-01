@@ -51,6 +51,13 @@ Welcome to my IBM Z Learning Journey repository! Here I track my progress throug
 - Badge verification is available via [Credly](https://www.credly.com/earner/earned/share/273fbf86-467e-4b4c-99df-e1041c3bc5bd)
 
 
+### IBM z-os Fundamental and concept Badge
+
+- **Badge:** [IBM z/OS Mainframe Practitioner](https://www.credly.com/badges/4227cd6a-72cc-414c-a92b-62de494d69df/public_url)
+
+- Badge verification is available via [Credly](https://www.credly.com/badges/4227cd6a-72cc-414c-a92b-62de494d69df/public_url)
+
+
 
 ---
 
@@ -68,9 +75,3 @@ Welcome to my IBM Z Learning Journey repository! Here I track my progress throug
 [LinkedIn](https://www.linkedin.com/in/sagar-regmi-60b377216/) 
 
 ---
-
-
-ssh Z79919@204.90.115.200
-
-
-/z/z79919
