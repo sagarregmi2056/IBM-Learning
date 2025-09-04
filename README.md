@@ -60,16 +60,80 @@ Welcome to my IBM Z Learning Journey repository! Here I track my progress throug
 
 
 ---
+# IBM Werkstudent Full-Stack + Mainframe + German Roadmap
 
-## 📌 Notes & Resources
-
-- I post daily progress updates on [LinkedIn](https://www.linkedin.com/in/sagar-regmi-60b377216/)  
-- All labs, exercises, and projects are documented here for reference and credibility.
+This repository contains my **12-month roadmap** to become a **top-tier IBM Werkstudent candidate** for the Winter 2026 intake. It integrates **full-stack development**, **mainframe skills**, and **German language learning**.
 
 ---
 
+## **Roadmap Overview**
+
+### **Step 0: Sep – Oct 2025**
+- **IBM 101 Completion**: IBM Z fundamentals, COBOL basics, JCL, REXX scripting, optional PL/I exposure
+- **German A1**: Grammar, basic conversation, everyday vocabulary
+
+### **Months 1–2: Nov – Dec 2025**
+- **Java Refresh**: OOP, classes, objects, collections, exceptions, mini CRUD project
+- **German A2**: Past tense, modal verbs, basic workplace and IT vocabulary
+
+### **Months 3–4: Jan – Feb 2026**
+- **Spring Boot CRUD + AWS Deployment**: REST APIs, database integration, Docker deployment
+- **German A2+**: Intermediate grammar, software and IT-specific vocabulary
+
+### **Months 5–6: Mar – Apr 2026**
+- **Microservices + DevOps Basics**: REST communication, Spring Cloud, Docker/Kubernetes/OpenShift, CI/CD
+- **German B1**: Subordinate clauses, future tense, passive voice, technical discussions
+
+### **Months 7–8: May – Jun 2026**
+- **COBOL + JCL**: Mainframe programming, job submission, payroll/student records project
+- **German B1+**: Conditional sentences, complex subordinate clauses, project descriptions
+
+### **Month 9: Jul 2026**
+- **REXX + Automation**: Automate batch jobs and COBOL program submissions
+- **German B2 Foundation**: Advanced sentence connectors, professional vocabulary
+
+### **Month 10: Aug 2026**
+- **PL/I Exposure**: Optional mainframe programming
+- **German B2**: Professional communication, workplace emails, technical vocabulary
+
+### **Month 11: Sep 2026**
+- **Mainframe + Java Integration**: Expose COBOL/PL/I programs as REST APIs, integrate with Spring Boot apps
+- **German B2**: Polish technical discussions and project presentations
+
+### **Month 12: Oct 2026**
+- **Portfolio Finalization + Application Prep**: Deploy all projects, CI/CD setup, GitHub documentation, apply to IBM and top-tier companies
+- **German B2**: Confident communication for interviews and workplace
 
 ---
+
+## **Optional Enhancements**
+- Node.js microservices integration
+- AI / Watson API integration
+- Monitoring dashboards (Grafana / Prometheus)
+- Additional IBM Z/mainframe certifications
+
+---
+
+## **Goals**
+- Build **full-stack projects** with Spring Boot, microservices, and cloud deployment
+- Gain **mainframe expertise** with COBOL, JCL, REXX, PL/I
+- Achieve **B2-level German proficiency** for professional communication
+- Have a **strong portfolio** to showcase to IBM and other top companies
+
+---
+
+## **How to Use This Repository**
+- Follow the roadmap month-by-month
+- Update GitHub with your projects as you complete each milestone
+- Include German documentation for projects where possible
+- Track progress on mainframe skills with small COBOL/JCL/REXX projects
+
+---
+
+**Author:** Niklas  
+**Target:** Winter 2026 IBM Werkstudent Intake  
+**Languages:** Java, Spring Boot, COBOL, REXX, JCL, PL/I, German (A1 → B2)
+
 
 **Let’s connect:**  
 [LinkedIn](https://www.linkedin.com/in/sagar-regmi-60b377216/) 
