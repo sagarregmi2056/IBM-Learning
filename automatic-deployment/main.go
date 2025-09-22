@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"strings"
 
 	"github.com/manifoldco/promptui"
 	"github.com/spf13/cobra"
@@ -21,12 +22,31 @@ type Config struct {
 	Port           string
 }
 
+var version = "1.0.0"
+
 func main() {
 	var rootCmd = &cobra.Command{
-		Use:   "auto-deployer",
-		Short: "Automated deployment tool for Kubernetes",
-		Long:  `A CLI tool that automates the process of cloning code, building Docker images, and deploying to Kubernetes.`,
-		Run:   run,
+		Version: version,
+		Use:     "auto-deployer",
+		Short:   "Automated deployment tool for Kubernetes",
+		Long: `🚀 Kubernetes Auto Deployment Tool
+Developed by: Sagar Regmi
+GitHub: https://github.com/sagarregmi2056
+
+This tool automates the process of cloning code, building Docker images, and deploying to Kubernetes.
+
+This tool will help you:
+1. Clone a GitHub repository (public or private)
+2. Build Docker images based on project type (Java/Node.js)
+3. Push images to Docker Hub
+4. Deploy to Kubernetes (Minikube)
+
+Prerequisites:
+- Docker Desktop running
+- Minikube installed and running
+- kubectl configured
+- Docker Hub account`,
+		Run: run,
 	}
 
 	if err := rootCmd.Execute(); err != nil {
@@ -38,6 +58,15 @@ func main() {
 func run(cmd *cobra.Command, args []string) {
 	config := &Config{}
 
+	// Clear screen and show welcome message
+	fmt.Print("\033[H\033[2J") // Clear screen
+	fmt.Println("\n🚀 Kubernetes Auto Deployment Tool")
+	fmt.Println("Developed by: Sagar Regmi")
+	fmt.Println("GitHub: https://github.com/sagarregmi2056")
+	fmt.Println("\n=============================================")
+	fmt.Println("Starting deployment process...")
+	fmt.Println("=============================================\n")
+
 	// GitHub Repository
 	prompt := promptui.Prompt{
 		Label:    "GitHub Repository URL",
@@ -45,6 +74,10 @@ func run(cmd *cobra.Command, args []string) {
 	}
 	result, err := prompt.Run()
 	if err != nil {
+		if err == promptui.ErrInterrupt {
+			fmt.Println("\nOperation cancelled by user")
+			os.Exit(0)
+		}
 		log.Fatalf("Prompt failed: %v\n", err)
 	}
 	config.GitHubRepo = result
@@ -138,8 +171,17 @@ func run(cmd *cobra.Command, args []string) {
 }
 
 func validateGitURL(input string) error {
-	if len(input) < 10 || input[:8] != "https://" {
-		return fmt.Errorf("invalid GitHub URL")
+	if len(input) < 10 {
+		return fmt.Errorf("URL too short")
+	}
+	if !strings.HasPrefix(input, "https://") {
+		return fmt.Errorf("URL must start with https://")
+	}
+	if !strings.Contains(input, "github.com/") {
+		return fmt.Errorf("Must be a GitHub repository URL")
+	}
+	if strings.Count(input, "/") < 4 {
+		return fmt.Errorf("Invalid repository URL format. Expected: https://github.com/username/repository")
 	}
 	return nil
 }
