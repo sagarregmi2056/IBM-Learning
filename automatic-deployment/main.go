@@ -65,7 +65,7 @@ func run(cmd *cobra.Command, args []string) {
 	fmt.Println("GitHub: https://github.com/sagarregmi2056")
 	fmt.Println("\n=============================================")
 	fmt.Println("Starting deployment process...")
-	fmt.Println("=============================================\n")
+	fmt.Println("=============================================")
 
 	// GitHub Repository
 	prompt := promptui.Prompt{
@@ -178,10 +178,10 @@ func validateGitURL(input string) error {
 		return fmt.Errorf("URL must start with https://")
 	}
 	if !strings.Contains(input, "github.com/") {
-		return fmt.Errorf("Must be a GitHub repository URL")
+		return fmt.Errorf("must be a github repository URL")
 	}
 	if strings.Count(input, "/") < 4 {
-		return fmt.Errorf("Invalid repository URL format. Expected: https://github.com/username/repository")
+		return fmt.Errorf("invalid repository url format. expected: https://github.com/username/repository")
 	}
 	return nil
 }
@@ -197,14 +197,14 @@ func checkPrerequisites() error {
 	// Check if Docker is running
 	dockerCmd := exec.Command("docker", "info")
 	if err := dockerCmd.Run(); err != nil {
-		return fmt.Errorf("Docker is not running or not installed: %v", err)
+		return fmt.Errorf("docker is not running or not installed: %v", err)
 	}
 
 	// Check if Minikube is installed
 	minikubeCmd := exec.Command("minikube", "status")
 	output, err := minikubeCmd.CombinedOutput()
 	if err != nil {
-		return fmt.Errorf("Minikube is not running or not installed: %v\nOutput: %s", err, output)
+		return fmt.Errorf("minikube is not running or not installed: %v\noutput: %s", err, output)
 	}
 
 	// Check if kubectl is installed
